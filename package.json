@@ -1,0 +1,36 @@
+{
+    "name": "@aapokiiso/hsl-congestion-route-pattern-repository",
+    "version": "1.0.0",
+    "description": "Get or create route patterns for HSL congestion tracking",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "husky": {
+        "hooks": {
+            "pre-push": "npm run lint"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aapokiiso/hsl-congestion-route-pattern-repository.git"
+    },
+    "author": "Aapo Kiiso <aapo@kii.so>",
+    "license": "CC0-1.0",
+    "bugs": {
+        "url": "https://github.com/aapokiiso/hsl-congestion-route-pattern-repository/issues"
+    },
+    "homepage": "https://github.com/aapokiiso/hsl-congestion-route-pattern-repository#readme",
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@lamiaoy/eslint-config": "^2.0.1",
+        "eslint": "^6.2.2",
+        "husky": "^3.0.4"
+    },
+    "dependencies": {
+        "@aapokiiso/hsl-congestion-db-schema": "^2.0.1",
+        "@aapokiiso/hsl-congestion-graphql-gateway": "^2.0.1",
+        "@aapokiiso/hsl-congestion-route-repository": "^1.0.1"
+    }
+}
